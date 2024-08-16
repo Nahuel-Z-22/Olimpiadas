@@ -21,12 +21,12 @@ if($result->num_rows > 0){
         $mail->isSMTP();
         $mail->Host       = 'smtp-mail.outlook.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'Luciocapo22@hotmail.com';
-        $mail->Password   = 'Maxpleyhd244@_0011';
+        $mail->Username   = 'Sport_Shop@outlook.com.ar';
+        $mail->Password   = 'Account_Test_Mailer';
         $mail->SMTPSecure = 'tls';
         $mail->Port       = 587;
 
-        $mail->setFrom('Luciocapo22@hotmail.com', 'Sport Shop');
+        $mail->setFrom('Sport_Shop@outlook.com.ar', 'Sport Shop');
         $mail->addAddress($email, $row['nombre']); // Añadir el destinatario
 
         $mail->isHTML(true);
