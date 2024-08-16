@@ -1,0 +1,275 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(../images/fondo.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.wrapper {
+  border-radius: 8px;
+  padding: 50px 40px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.wrapper h1 {
+  margin: 0px;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  text-overflow: ellipsis;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  overflow-wrap: anywhere;
+  margin-bottom: 50px;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 20px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 20px 45px 20px 20px;
+}
+
+.toggle-visibility {
+  background: none;
+  border: none;
+}
+
+.input-box input::placeholder {
+  color: #fff;
+}
+
+.input-box i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #fff;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+
+.register-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: rgb(233, 119, 128);
+  background-color: #2f0d55c0;
+  text-align: center;
+  max-width: 100%;
+}
+
+.success-message {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: rgb(119, 233, 133);
+  background-color: #0d552f80;
+  text-align: center;
+  max-width: 100%;
+}
+
+
+
+.forgot-password-link {
+  text-align: left;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.forgot-password-btn {
+  margin: 0px;
+  font-weight: 400;
+  font-size: 0.95rem;
+  line-height: 1.43;
+  letter-spacing: 0.05em;
+  text-overflow: ellipsis;
+  overflow: visible;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.wrapper .instruction {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.43;
+  letter-spacing: 0.01em;
+}
+
+.wrapper .instruction em {
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .wrapper {
+    width: 90%;
+  }
+
+  .input-box input {
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .input-box input {
+    font-size: 14px;
+    padding: 15px;
+  }
+
+  .btn {
+    font-size: 14px;
+    height: 40px;
+  }
+}
+
+.custom-google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #ffffff;
+  color: #333;
+  font-weight: 600;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+.custom-google-btn img {
+  height: 20px;
+  margin-right: 10px;
+}
+
+.custom-google-btn:hover {
+  background-color: #c4c4c4e5;
+}
+
+.or-separator {
+  color: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.or-separator span {
+  padding: 0 10px;
+  z-index: 1;
+  font-weight: bold;
+}
+
+.or-separator:before,
+.or-separator:after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #fff;
+  margin: 0 10px;
+}
+
+.button-container-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.btn-exit {
+  width: 48%;
+  background: #ffffffa8;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.btn-exit:hover {
+  background-color: #c5c3c3;
+}
+
+.btn:hover {
+  background-color: #ae91ff7c;
+}
